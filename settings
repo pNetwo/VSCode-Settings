@@ -6,7 +6,9 @@
   // =================== CONFIG: janelas, temas, icones ===================
   "window.zoomLevel": 0, // <== Zoom da tela
   "workbench.sideBar.location": "left", // <== Posição da barra lateral
-  "workbench.colorTheme": "Omni",
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "fluent-icons",
   "symbols.hidesExplorerArrows": false, // <== Abrir arquivos não confiáveis em uma nova janela
   "glassit.alpha": 241,
   "workbench.tree.indent": 20,
@@ -50,10 +52,10 @@
   "typescript.updateImportsOnFileMove.enabled": "never",
   // =================== CONFIG: editor ===================
   "editor.rulers": [120, 120], // <== Linhas guias
-  "editor.fontSize": 18, // <== Tamanho da fonte
+  "editor.fontSize": 16, // <== Tamanho da fonte
   "editor.tabSize": 2, // <== Tamanho da tabulação
-  "editor.lineHeight": 28, // <== Altura da linha
-  "editor.fontFamily": "FiraCode Nerd Font", // <== Fonte
+  "editor.lineHeight": 24, // <== Altura da linha
+  "editor.fontFamily": "JetBrains Mono", // <== Fonte
   "editor.suggestSelection": "first", // <== Selecionar a primeira sugestão
   "editor.fontLigatures": true, // <== Fonte com ligaduras
   "editor.acceptSuggestionOnCommitCharacter": false, // <== Não aceitar sugestão ao digitar
@@ -69,9 +71,9 @@
   "editor.guides.bracketPairs": "active",
   "editor.wordWrap": "on",
   // =================== CONFIG: terminal linux ===================
-  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontSize": 14,
   "terminal.integrated.shell.linux": "bash",
-  "terminal.integrated.fontFamily": "FiraCode Nerd Font",
+  "terminal.integrated.fontFamily": "JetBrains Mono",
   "terminal.integrated.showExitAlert": false,
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"
@@ -178,6 +180,10 @@
   "tabnine.experimentalAutoImports": true,
   // =================== CONFIG: segurança ===================
   "security.workspace.trust.untrustedFiles": "newWindow",
+  "liveServer.settings.donotVerifyTags": true,
   "liveServer.settings.donotShowInfoMsg": true,
-  "workbench.iconTheme": "material-icon-theme"
+  "codeium.enableConfig": {
+    "*": true,
+    "mustache": true
+  }
 }
