@@ -1,6 +1,6 @@
 # ⚙️ pNetwo VS Code Settings
 
-![Preview do meu Setup](<img width="1132" height="442" alt="vs-code-config" src="https://github.com/user-attachments/assets/67c3a5ab-ff6e-45a4-a74d-6a607b87c5c9" />)
+![Preview do meu Setup](./vs-code-config.png)
 
 Este repositório contém meu `settings.json` pessoal. Meu ambiente foi desenhado para **alta produtividade** e **facilidade de leitura**, utilizando recursos modernos do VS Code para entender o código mais rápido.
 
