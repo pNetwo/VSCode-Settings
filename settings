@@ -6,9 +6,8 @@
   // =================== CONFIG: janelas, temas, icones ===================
   "window.zoomLevel": 0, // <== Zoom da tela
   "workbench.sideBar.location": "left", // <== Posição da barra lateral
-  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.colorTheme": "One Dark Pro Night Flat",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.productIconTheme": "fluent-icons",
   "symbols.hidesExplorerArrows": false, // <== Abrir arquivos não confiáveis em uma nova janela
   "glassit.alpha": 241,
   "workbench.tree.indent": 20,
@@ -17,13 +16,13 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   // =================== CONFIG: react.js ===================
   "emmet.syntaxProfiles": {
-    "javascript": "jsx"
+    "javascript": "jsx",
   },
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
     "typescript": "typescriptreact",
     "javascriptreact": "javascriptreact",
-    "typescriptreact": "typescriptreact"
+    "typescriptreact": "typescriptreact",
   },
   // =================== CONFIG: arquivos e pastas ===================
   "files.autoSave": "afterDelay", // <== Salvar automaticamente
@@ -32,7 +31,7 @@
     ".stylelintrc": "json",
     "*.tsx": "typescriptreact",
     ".env.*": "dotenv",
-    ".prettierrc": "json"
+    ".prettierrc": "json",
   },
   "files.exclude": {
     "**/CVS": true,
@@ -41,7 +40,7 @@
     "**/.svn": true,
     "**/.git": true,
     "**/node_modules": false,
-    "**/_pycache_": true
+    "**/_pycache_": true,
   },
   // =================== CONFIG: extensões ===================
   "extensions.ignoreRecommendations": true, // <== Não mostrar recomendações de extensões
@@ -65,18 +64,23 @@
   "editor.renderLineHighlight": "gutter", // <== Destacar linha atual
   "editor.cursorStyle": "line",
   "editor.cursorBlinking": "smooth",
-  "editor.stickyScroll.enabled": false,
   "editor.minimap.enabled": false,
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
   "editor.wordWrap": "on",
+
+  // Turbinando o Aprendizado
+  "editor.stickyScroll.enabled": true,
+  "editor.inlayHints.enabled": "on",
+  "editor.cursorSmoothCaretAnimation": "on", // Movimento suave do cursor
+
   // =================== CONFIG: terminal linux ===================
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.shell.linux": "bash",
   "terminal.integrated.fontFamily": "JetBrains Mono",
   "terminal.integrated.showExitAlert": false,
   "terminal.integrated.env.osx": {
-    "FIG_NEW_SESSION": "1"
+    "FIG_NEW_SESSION": "1",
   },
   // =================== CONFIG: discord presence ===================
   "discord.detailsIdling": "👀 Procurando nos Arquivos...",
@@ -90,7 +94,7 @@
   "eslint.format.enable": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
-    "source.organizeImports": "explicit"
+    "source.organizeImports": "explicit",
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
@@ -104,28 +108,28 @@
     "markdown": true,
     "javascript": true,
     "python": true,
-    "javascriptreact": true
+    "javascriptreact": true,
   },
   "editor.semanticHighlighting.enabled": false,
   "eslint.validate": ["javascript", "typescriptreact", "javascriptreact"],
   "[javascript]": {
     "editor.autoClosingBrackets": "always",
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[typescript]": {
     "editor.autoClosingBrackets": "always",
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[javascriptreact]": {
     "editor.autoClosingBrackets": "always",
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[typescriptreact]": {
     "editor.autoClosingBrackets": "always",
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[python]": {
-    "editor.defaultFormatter": "ms-python.python"
+    "editor.defaultFormatter": "ms-python.python",
   },
   // =================== CONFIG: explorador de arquivos ===================
   "explorer.confirmDelete": false,
@@ -149,7 +153,7 @@
     "Onboarded",
     "prefetch",
     "rocketseat",
-    "upsert"
+    "upsert",
   ],
   "cSpell.language": "en,pt",
   "cSpell.enableFiletypes": [
@@ -169,12 +173,12 @@
     "!restructuredtext",
     "!rust",
     "!scala",
-    "!scss"
+    "!scss",
   ],
   // =================== CONFIG: prisma ===================
   "[prisma]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "Prisma.prisma"
+    "editor.defaultFormatter": "Prisma.prisma",
   },
   // =================== CONFIG: tabnine ===================
   "tabnine.experimentalAutoImports": true,
@@ -184,6 +188,11 @@
   "liveServer.settings.donotShowInfoMsg": true,
   "codeium.enableConfig": {
     "*": true,
-    "mustache": true
-  }
+    "mustache": true,
+  },
+  "workbench.productIconTheme": "fluent-icons",
+  "security.allowedUNCHosts": ["wsl.localhost"],
+  "terminal.integrated.suggest.quickSuggestions": true,
+  "terminal.integrated.suggest.suggestOnTriggerCharacters": true,
+  "editor.renderWhitespace": "boundary",
 }
